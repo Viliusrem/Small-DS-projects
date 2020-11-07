@@ -4,10 +4,10 @@ bmi = 26.2
 number_of_children = 3
 smoker = 0
 
-def insurance_calc(age, sex, bmi, number_of_children, smoker):
+def insurance_calc(age, sex, bmi, number_of_children, smoker):                          # insurance quote formula
   return 250*age - 128*sex + 370*bmi + 425*number_of_children + 24000*smoker - 12500
 
-insurance_cost = insurance_calc(age, sex, bmi, number_of_children, smoker)
+insurance_cost = insurance_calc(age, sex, bmi, number_of_children, smoker)              # insurance quote adjusted to different factors
 
 new_insurance_cost = insurance_calc(age + 4, sex, bmi, number_of_children, smoker)
 
@@ -17,7 +17,7 @@ new_insurance_cost_bmi = insurance_calc(age, sex, bmi + 3.1, number_of_children,
 
 new_insurance_cost_sex = insurance_calc(age, 1, bmi, number_of_children, smoker)
 
-print('\n', "This person's insurance cost is", insurance_cost, "dollars.")
+print('\n', "This person's insurance cost is", insurance_cost, "dollars.")              # reporting
 
 print('\n', "This person's insurance cost is", new_insurance_cost, "dollars.")
 
